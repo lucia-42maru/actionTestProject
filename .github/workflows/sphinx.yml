@@ -11,15 +11,15 @@ jobs:
       matrix:
         python-version: [3.8]
     steps:
-      - name: Checkout private sphinx-pages action
+      - name: Checkout private test page action
         uses: actions/checkout@v2
         with:
-          repository: 42maru-ai/sphinx-pages
+          repository: lucia-42maru/actionTestProject
           ref: master
-          token: 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 # organization-wide secrets
-          path: .github/actions/sphinx-pages
-      - name: Run sphinx-pages
-        uses: ./.github/actions/sphinx-pages
+          token: ${{ secrets.TEST_SECERT }} # organization-wide secrets
+          path: .github/actions/actionTestProject
+      - name: Run test action
+        uses: ./.github/actions/actionTestProject
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
