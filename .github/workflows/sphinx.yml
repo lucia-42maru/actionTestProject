@@ -19,12 +19,10 @@ jobs:
           token: ${{ secrets.TEST_SECERT }} # organization-wide secrets
           path: .github/actions
       - name: Run test action
-        uses: actions/action.yml
+        uses: ./
         with:
-          repository: lucia-42maru/actionTestProject
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
-          path: .github/actions
           # 문서의 기준이 될 브랜치 입력 (예: main) 기본값은 master
           # The branch that documentation will use as reference. (Example: main) Defaults to master
           branch_name: docs
