@@ -16,7 +16,7 @@ jobs:
         with:
           repository: 42maru-ai/sphinx-pages
           ref: master
-#          token: ${{ secrets.SPHINX_PAGES_TOKEN }} # organization-wide secrets
+          token: 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 # organization-wide secrets
           path: .github/actions/sphinx-pages
       - name: Run sphinx-pages
         uses: ./.github/actions/sphinx-pages
