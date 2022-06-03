@@ -17,9 +17,9 @@ jobs:
           repository: lucia-42maru/actionTestProject
           ref: master
           token: ${{ secrets.TEST_SECERT }} # organization-wide secrets
-          path: .github/actions/
+          path: .github/actions
       - name: Run test action
-        uses: ../.github/actions
+        uses: /home/runner/work/actionTestProject/.github/actions/Dokcerfile
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
