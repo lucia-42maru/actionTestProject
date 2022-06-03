@@ -19,8 +19,9 @@ jobs:
           token: ${{ secrets.TEST_SECERT }} # organization-wide secrets
           path: .github/actions
       - name: Run test action
-        uses: ./.github/actions/sphinx-pages
+        uses: ./.github/actions/
         with:
+          repository: lucia-42maru/actionTestProject
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
           # 문서의 기준이 될 브랜치 입력 (예: main) 기본값은 master
