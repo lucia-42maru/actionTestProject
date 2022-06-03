@@ -11,7 +11,7 @@ docs_src=$GITHUB_WORKSPACE/docs
 docs_html=$GITHUB_WORKSPACE/gh-pages
 branch_src=$GITHUB_WORKSPACE/branch
 sphinx_doctree=$GITHUB_WORKSPACE/.doctree
-resources_dir=$GITHUB_WORKSPACE/.github/actions/sphinx-pages
+resources_dir=$GITHUB_WORKSPACE/.github/actions/
 
 echo ::group::Create working directories
 echo "mkdir $docs_src"
