@@ -14,12 +14,12 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('../src'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Test_project'
+project = 'Test_Project'
 copyright = '2022, Lucia'
 author = 'Lucia'
 
