@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.TEST_SECERT }} # organization-wide secrets
           path: .github/actions/actionTestProject
       - name: Run test action
-        uses: ./.github/actions/
+        uses: .github/actions/
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
