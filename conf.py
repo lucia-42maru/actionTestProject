@@ -66,9 +66,6 @@ language = 'ko'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-add_function_parentheses = True
-autoapi_dirs = [os.environ['../src']]
-autdoc_typehints = 'descriptions'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
