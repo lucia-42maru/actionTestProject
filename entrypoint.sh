@@ -120,6 +120,7 @@ if [ "$INPUT_INSTALL_EXTENSIONS" = true ] ; then
 fi
 
 # sphinx-build
+run sphinx-apidoc -f -o docs/source src/
 echo ::group::Sphinx build html
 echo "module_location=$branch_src/$INPUT_MODULE_LOCATION"
 module_location=$branch_src/$INPUT_MODULE_LOCATION
