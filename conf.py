@@ -67,7 +67,7 @@ language = 'ko'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 add_function_parentheses = True
-autoapi_dirs = [os.environ["./src"]]
+autoapi_dirs = os.path.abspath('../../src')
 autdoc_typehints = 'descriptions'
 
 # The name of the Pygments (syntax highlighting) style to use.
