@@ -67,6 +67,7 @@ language = 'ko'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 add_function_parentheses = True
+
 autoapi_dirs = os.path.abspath('./src')
 autdoc_typehints = 'descriptions'
 
@@ -111,70 +112,70 @@ htmlhelp_basename = 'Test_Project_'
 
 # -- Options for LaTeX output ------------------------------------------------
 
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'Test_project.tex', 'Test\\_project Documentation',
-     'Lucia', 'manual'),
-]
-
-
-# -- Options for manual page output ------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'test_project', 'Test_project Documentation', [author], 1)
-]
-
-
-# -- Options for Texinfo output ----------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'Test_project', 'Test_project Documentation',
-     author, 'Test_project', 'One line description of project.',
-     'Miscellaneous'),
-]
-
-
-# -- Options for Epub output -------------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = project
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
+# latex_elements = {
+#     # The paper size ('letterpaper' or 'a4paper').
+#     #
+#     # 'papersize': 'letterpaper',
 #
-# epub_identifier = ''
-
-# A unique identification for the text.
+#     # The font size ('10pt', '11pt' or '12pt').
+#     #
+#     # 'pointsize': '10pt',
 #
-# epub_uid = ''
-
-# A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+#     # Additional stuff for the LaTeX preamble.
+#     #
+#     # 'preamble': '',
+#
+#     # Latex figure (float) alignment
+#     #
+#     # 'figure_align': 'htbp',
+# }
+#
+# # Grouping the document tree into LaTeX files. List of tuples
+# # (source start file, target name, title,
+# #  author, documentclass [howto, manual, or own class]).
+# latex_documents = [
+#     (master_doc, 'Test_project.tex', 'Test\\_project Documentation',
+#      'Lucia', 'manual'),
+# ]
+#
+#
+# # -- Options for manual page output ------------------------------------------
+#
+# # One entry per manual page. List of tuples
+# # (source start file, name, description, authors, manual section).
+# man_pages = [
+#     (master_doc, 'test_project', 'Test_project Documentation', [author], 1)
+# ]
+#
+#
+# # -- Options for Texinfo output ----------------------------------------------
+#
+# # Grouping the document tree into Texinfo files. List of tuples
+# # (source start file, target name, title, author,
+# #  dir menu entry, description, category)
+# texinfo_documents = [
+#     (master_doc, 'Test_project', 'Test_project Documentation',
+#      author, 'Test_project', 'One line description of project.',
+#      'Miscellaneous'),
+# ]
+#
+#
+# # -- Options for Epub output -------------------------------------------------
+#
+# # Bibliographic Dublin Core info.
+# epub_title = project
+#
+# # The unique identifier of the text. This can be a ISBN number
+# # or the project homepage.
+# #
+# # epub_identifier = ''
+#
+# # A unique identification for the text.
+# #
+# # epub_uid = ''
+#
+# # A list of files that should not be packed into the epub file.
+# epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
