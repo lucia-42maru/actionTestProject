@@ -39,8 +39,8 @@ release = 'V1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.autodoc', 'autoapi.extension', 'sphinx.ext.doctest',
+    'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.ifconfig'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -66,6 +66,9 @@ language = 'ko'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
+add_function_parentheses = True
+autoapi_dirs = [os.environ["./src"]]
+autdoc_typehints = 'descriptions'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
